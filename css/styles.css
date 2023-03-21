@@ -291,7 +291,7 @@ button {
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/bg-mob.jpg);
+        url(../images/peopleoffice-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 480px;
@@ -304,7 +304,7 @@ button {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/bg-mob@2x.jpg);
+            url(../images/peopleoffice-mob@2x.jpg
     }
 }
 
@@ -314,7 +314,7 @@ button {
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/bg-tablet.jpg);
+            url(../images/peopleoffice-tablet.jpg);
         max-width: 768px;
     }
 }
@@ -325,7 +325,7 @@ button {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/bg-tablet@2x.jpg);
+            url(../images/peopleoffice-tablet@2x.jpg);
     }
 }
 
@@ -335,7 +335,7 @@ button {
         padding-bottom: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/bg-desc.jpg);
+            url(../images/peopleoffice.jpg);
         max-width: 1440px;
     }
 }
@@ -346,7 +346,7 @@ button {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/bg-desc@2x.jpg);
+            url(../images/peopleoffice@2x.jpg);
     }
 }
 
