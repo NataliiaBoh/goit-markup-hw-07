@@ -45,7 +45,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="header-btn-mob" data-menu-open>
+        <button type="button" class="header-btn-mob" js-open-menu>
           <svg width="32" height="22">
             <use href="./images/symbol-defs.svg#icon-burger"></use>
           </svg>
@@ -121,7 +121,7 @@
         </div>
       </section>
       <!--What are we doing-->
-      <section class="section">
+      <section class="doing-section section">
         <div class="conteiner">
           <h2 class="section-title">What are we doing</h2>
           <ul class="doing-list list">
@@ -518,10 +518,10 @@
     </footer>
     <!-- Header-menu-mobile -->
 
-    <div class="header-backdrop-menu-mob is-hidden" data-menu>
-        <button type="button" class="close-header-menu-mob-btn" data-menu-close>
+    <div class="header-backdrop-menu-mob is-hidden" js-menu-container>
+        <button type="button" class="close-header-menu-mob-btn" js-close-menu>
             <svg class="close-modal-icon" width="8" height="8">
-                <use href="./images/icons.svg#close-btn"></use>
+                <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
             </svg>
         </button>
 
@@ -549,7 +549,7 @@
                 <ul class="menu-mob-social-list">
                     <li class="menu-mob-social-item"><a class="menu-mob-social-link" href="">
                             <svg width="24" height="24">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"instagram"></use>
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a></li>
                     <li class="menu-mob-social-item"><a class="menu-mob-social-link" href="">
@@ -575,10 +575,10 @@
 
     </div>
     <!--modal-->
-    <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button" data-modal-close>
-          <svg class="close" width="8" height="8">
+          <svg class="close">
             <use
               href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"
             ></use>
@@ -660,5 +660,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
