@@ -273,7 +273,7 @@ button {
     color: var(--primary-btn-color);
 }
 
-.header-btn-mob {
+.menu-toggle {
     display: block;
     padding: 0;
     border: none;
@@ -282,7 +282,7 @@ button {
 }
 
 @media (min-width: 768px) {
-    .header-btn-mob {
+    .menu-toggle {
         display: none;
     }
 }
@@ -1214,7 +1214,7 @@ button {
 
 /* Header-menu-mobile */
 
-.header-backdrop-menu-mob {
+.menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -1223,6 +1223,16 @@ button {
     z-index: 100;
     width: 100%;
     height: 100%;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+
+
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
 }
 
 .header-backdrop-menu-mob.is-hidden {
@@ -1231,7 +1241,8 @@ button {
     pointer-events: none;
 }
 
-.close-header-menu-mob-btn {
+
+.menu-container .menu-toggle {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -1249,8 +1260,8 @@ button {
     transition: background-color var(--transition);
 }
 
-.close-header-menu-mob-btn:hover,
-.close-header-menu-mob-btn:focus {
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus {
     background-color: var(--primary-btn-color);
 }
 
