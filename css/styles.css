@@ -47,6 +47,11 @@
 
 }
 
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
 .conteiner {
 
     width: 100%;
@@ -410,8 +415,7 @@ button {
 /* main */
 
 .about {
-    padding-top: 96px;
-    padding-bottom: 96px;
+   
 }
 
 @media screen and (min-width: 1200px) {
@@ -511,7 +515,7 @@ button {
 /* What are we doin */
 
 .section {
-    padding-bottom: 120px;
+ 
 }
 
 .doing-list {
@@ -532,9 +536,8 @@ button {
 /* team */
 
 .team-section {
-    background-color: #f4f4fd;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    background-color: var(--primary-white-color);
+   
 }
 
 @media screen and (min-width: 1200px) {
@@ -662,7 +665,7 @@ button {
 }
 
 .customers-item {
-    flex-basis: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 16px) / 2);
     max-width: 190px;
 }
 
@@ -773,7 +776,7 @@ button {
     margin-top: 16px;
 }
 
-.logo-item-footer {
+.footer-accent {
     color: #f4f4fd;
 }
 
@@ -855,6 +858,10 @@ button {
         flex-direction: row;
         gap: 24px;
     }
+}
+
+.footer-label {
+    width: 100%;
 }
 
 .footer-input {
@@ -946,8 +953,8 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 408px;
-    min-height: 576px;
+    width: calc(100%-36px);
+    min-width: 392px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1045,10 +1052,11 @@ button {
     padding: 8px 16px 8px 38px;
 
     color: var(--primary-text-color);
+    background-color: transparent;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input-icon {
@@ -1113,11 +1121,10 @@ button {
 }
 
 .modal-form-label-checkbox {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     align-items: center;
-    justify-content: none;
-
+    /*justify-content: none;*/
 
 
     font-size: 12px;
@@ -1126,11 +1133,19 @@ button {
     color: #757575;
 }
 
-.modal-form-input-checkbox visibility-hidden {
+.modal-form-input-checkbox {
+    position: absolute;
+    opacity: 0;
+    visibility: visible;
+}
 
+/*.modal-form-input-checkbox visibility-hidden {
+    position: absolute;
+    opacity: 0;
+     
     visibility: visible;
 
-}
+}*/
 
 
 .text-privacy-police {
@@ -1138,8 +1153,9 @@ button {
 }
 
 .modal-form-icon-checkbox {
-    position: absolute;
+    /*position: absolute;*/
     display: inline-flex;
+    order: -1;
 
 
     margin-right: 8px;
@@ -1149,7 +1165,7 @@ button {
 
     width: 16px;
     height: 16px;
-    border: 1.25px solid var(--title-text-color);
+    border: 1px solid var(--title-text-color);
     border-radius: 2px;
 
     fill: none;
