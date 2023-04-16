@@ -257,6 +257,7 @@ button {
 
 @media screen and (min-width: 768px) {
     .address-link {
+        display: block;
         font-size: 12px;
         font-style: normal;
         line-height: 1.17;
@@ -522,6 +523,8 @@ button {
  
 }
 
+
+
 .doing-list {
     display: flex;
     gap: 24px;
@@ -532,7 +535,7 @@ button {
 }
 
 @media screen and (max-width: 1199px) {
-    .doing-section {
+    .section.doing-section {
         display: none;
         padding-top: 0;
     }
@@ -584,7 +587,7 @@ button {
 
 @media screen and (min-width: 1200px) {
     .team-list-item {
-        flex-basis: calc((100%-24px * 3) / 4);
+        flex-basis: calc((100% - 24px * 3) / 4);
     }
 }
 
@@ -672,7 +675,7 @@ button {
 
 @media screen and (min-width: 1200px) {
     .customers-item {
-        width: 168px;
+        width: calc((100% - 24px * 5) / 6);
     }
 }
 
@@ -737,7 +740,7 @@ button {
     .footer-box {
         flex-wrap: nowrap;
         gap: 0;
-        max-width: 1128px;
+        max-width: 1158px;
     }
 }
 
@@ -776,7 +779,7 @@ button {
 
 @media screen and (min-width: 1200px) {
     .box-media {
-        margin-right: 80px;
+        margin-right: auto;
     }
 }
 
@@ -840,6 +843,12 @@ button {
 
 .form {
     width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .form {
+        width: auto;
+    }
 }
 
 .footer-form {
@@ -1038,6 +1047,10 @@ button {
     height: 8px;
     fill: #2E2F42;
     border: none;
+    
+}
+.close:hover, .close:focus {
+    fill: var(--primary-white-color);
 }
 
 .modal-text {
@@ -1048,6 +1061,7 @@ button {
     margin-top: 0;
     margin-bottom: 16px;
 }
+
 
 .modal-form {
     display: flex;
@@ -1274,6 +1288,7 @@ button {
 }
 
 
+
 .menu-container .menu-toggle {
     position: absolute;
     top: 24px;
@@ -1283,8 +1298,7 @@ button {
     justify-content: center;
     align-items: center;
 
-    width: 24px;
-    height: 24px;
+   
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -1292,9 +1306,15 @@ button {
     transition: background-color var(--transition);
 }
 
+
 .menu-container .menu-toggle:hover,
 .menu-container .menu-toggle:focus {
     background-color: var(--primary-btn-color);
+}
+.menu-toggle {
+    width: 24px;
+    height: 24px;
+
 }
 
 .header-menu-mob {
