@@ -51,7 +51,7 @@
     padding-top: 96px;
     padding-bottom: 96px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -79,7 +79,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .conteiner {
         max-width: 1158px;
     }
@@ -170,7 +170,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .logo {
         margin-right: 76px;
     }
@@ -248,7 +248,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .address-list {
         flex-direction: row;
         gap: 40px;
@@ -269,7 +269,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .address-link {
         font-size: 16px;
         line-height: 1.5;
@@ -294,10 +294,16 @@ button {
     background-color: transparent;
 }
 
+
+
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
+}
+
+.menu-toggle-icon {
+    display: block;
 }
 
 @media (max-width: 767px) {
@@ -358,7 +364,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .hero {
         padding-top: 188px;
         padding-bottom: 188px;
@@ -370,8 +376,8 @@ button {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-(min-resolution: 192dpi) and (min-width: 1200px),
-(min-resolution: 2dppx) and (min-width: 1200px) {
+(min-resolution: 192dpi) and (min-width: 1158px),
+(min-resolution: 2dppx) and (min-width: 1158px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -452,7 +458,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .about-element {
         flex-basis: calc((100% - 24px * 3) / 4);
     }
@@ -472,7 +478,7 @@ button {
     border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157px) {
     .about-thumb {
         display: none;
     }
@@ -496,7 +502,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .about .subtitle {
         font-weight: 500;
         font-size: 20px;
@@ -511,7 +517,7 @@ button {
     color: #434455;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .about p {
         font-weight: 400;
     }
@@ -534,7 +540,7 @@ button {
     flex-basis: calc((100% - 24px * 2) / 3);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157px) {
     .section.doing-section {
         display: none;
         padding-top: 0;
@@ -568,7 +574,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .team-list {
         flex-wrap: nowrap;
         gap: 24px;
@@ -585,9 +591,9 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .team-list-item {
-        flex-basis: calc((100% - 24px * 3) / 4);
+        flex-basis: calc((100% - 24px) / 2);
     }
 }
 
@@ -652,7 +658,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .customers-list {
         display: flex;
         flex-wrap: nowrap;
@@ -673,7 +679,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .customers-item {
         width: calc((100% - 24px * 5) / 6);
     }
@@ -710,7 +716,7 @@ button {
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .footer {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -736,7 +742,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .footer-box {
         flex-wrap: nowrap;
         gap: 0;
@@ -748,10 +754,11 @@ button {
     width: 268px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .footer-logo {
         width: 264px;
         margin-right: 120px;
+        flex-shrink: 0;
     }
 }
 
@@ -777,7 +784,7 @@ button {
     color: #f4f4fd;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .box-media {
         margin-right: auto;
     }
@@ -845,7 +852,7 @@ button {
     width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .form {
         width: auto;
     }
@@ -1203,6 +1210,8 @@ button {
     display: inline-flex;
     order: -1;
 
+    flex-shrink: 0;
+
 
     margin-right: 8px;
 
@@ -1211,7 +1220,7 @@ button {
 
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(46, 47, 66, 1);
+    border: 1px solid rgb(153, 154, 165);
     border-radius: 2px;
 
     fill: none;
@@ -1311,11 +1320,7 @@ button {
 .menu-container .menu-toggle:focus {
     background-color: var(--primary-btn-color);
 }
-.menu-toggle {
-    width: 24px;
-    height: 24px;
 
-}
 
 .header-menu-mob {
     height: 100%;
@@ -1417,7 +1422,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .portfolio-section {
         padding-top: 100px;
         padding-bottom: 120px;
@@ -1439,7 +1444,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .portfolio-nav {
         margin-bottom: 72px;
     }
@@ -1481,7 +1486,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .portfolio-list {
         gap: 48px 24px;
     }
@@ -1493,7 +1498,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .portfolio-element {
         flex-basis: calc((100% - 24px * 2) / 3);
     }
@@ -1524,6 +1529,12 @@ button {
 
 .div-element .subtitle {
     margin-bottom: 8px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 .div-element p {
