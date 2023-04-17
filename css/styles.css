@@ -410,7 +410,7 @@ button {
     letter-spacing: 0.04em;
     color: var(--primary-white-color);
     background: var(--accent-color);
-    background-color: var(--primary-btn-color);
+    background-color: var(--accent-color);
 
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -543,6 +543,12 @@ button {
 @media screen and (max-width: 1157px) {
     .section.doing-section {
         display: none;
+        
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .section.doing-section {
         padding-top: 0;
     }
 }
